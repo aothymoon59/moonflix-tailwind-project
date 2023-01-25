@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoonFlix Production</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        yellow1: '#FECC02',
+                        dark1: '#131313',
+                        dark2: '#4E4E4E',
+                    },
+                    fontFamily: {
+                        bebas: ["Bebas Neue", "cursive"],
+                        moon: ["Montserrat", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body>
+    <header class="font-bebas">
+        <nav class="bg-white fixed top-0 right-0 left-0 z-50">
+            <div class="w-full max-w-7xl mx-auto px-5 flex justify-between items-center h-20">
+                <h2 class="font-dark1 text-3xl">Moon<span class="text-yellow1">Flix</span> Production</h2>
+                <ul class="flex gap-5 text-lg text-dark1">
+                    <li><a href="#">About US </a></li>
+                    <li><a href="#">our Movies</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- banner  -->
+        <section class="bg-[url('images/banner.jpg')] h-screen bg-cover pt-20">
+            <div class="w-full max-w-7xl mx-auto px-5 flex items-center h-full">
+                <div class="">
+                    <h4 class="text-xl text-white">Movie production studio</h4>
+                    <h1 class="text-7xl text-white">Films MAde to</h1>
+                    <h1 class="text-7xl text-yellow1">Perfection</h1>
+                    <p class="text-white mt-5 mb-9 max-w-xl font-moon">Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Ut
+                        elit tellus,
+                        luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                    <button
+                        class="text-white border-2 border-white text-xl py-3 px-5 hover:bg-yellow1 hover:border-yellow1 hover:text-dark1">Discover
+                        More
+                    </button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- About Us -->
+        <section class="pt-40">
+            <div class="w-full max-w-7xl mx-auto px-5 border-2 border-dark1 p-8 font-bebas">
+                <div class="flex gap-14">
+                    <div class="w-1/2 relative">
+                        <img src="images/camera-man.jpg" alt="">
+                        <h1
+                            class="bg-white text-black text-3xl w-[80%] text-center px-5 py-3 rounded-md  shadow-lg absolute bottom-[-7%] left-[9%]">
+                            23 YEARS of EXPERIENCE
+                        </h1>
+                    </div>
+                    <div class="w-1/2">
+                        <h5 class="text-dark1 mb-1">ABOUT US</h5>
+                        <h1 class="text-dark1 text-7xl">FIlming Experience</h1>
+                        <h1 class="text-dark1 text-7xl">Just Got better</h1>
+                        <p class="font-moon mt-2 mb-7">Primis lobortis adipiscing imperdiet dis ultricies. Id commodo
+                            interdum
+                            fermentum pede
+                            dictumst ipsum. Erat sapien phasellus suspendisse natoque nulla leo ornare mi. Pretium
+                            rhoncus venenatis ante dignissim aliquet faucibus tempus etiam feugiat.</p>
+                        <button
+                            class="text-dark1 border-2 border-dark1 text-xl py-3 px-5 hover:bg-yellow1 hover:border-yellow1 hover:text-dark1">Discover
+                            More
+                        </button>
+                    </div>
+                </div>
+                <div class="mt-20 grid grid-cols-3 gap-14">
+                    <!-- card 1 -->
+                    <div class="border-t-2 pt-3 border-dark1">
+                        <h2 class="text-5xl text-dark1">OUR VISIOn</h2>
+                        <p class="font-moon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
+                            luctus nec
+                            ullamcorper mattis, pulvinar dapibus leo.</p>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="border-t-2 pt-3 border-dark1">
+                        <h2 class="text-5xl text-dark1">OUR Mission</h2>
+                        <p class="font-moon">Malesuada tempus et habitant nascetur porta nec. Fusce consequat risus per
+                            sollicitudin hendrerit suscipit convallis sociosqu.
+                        </p>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="border-t-2 pt-3 border-dark1">
+                        <h2 class="text-5xl text-dark1">OUR Motto</h2>
+                        <p class="font-moon">“We don’t make movies to make money, we make money to make more movies.”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
